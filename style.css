@@ -1,0 +1,82 @@
+body {
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.weather-bar {
+    background-color: #004261;
+    border-radius: 30px;
+}
+
+.weather-bar--row {
+    position: relative;
+    overflow:hidden;
+    min-height: 200px;
+}
+
+.weather-bar-button {
+    color: #fff;
+    background-color: #004261;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #fff;
+    border-image: none;
+    border-radius: 32px;
+    width: 200px;
+    height: 60px;
+    position: relative;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.weather-bar-button--center-div {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    display: table;
+    padding: 70px 0;
+}
+
+.weather-bar-img--container {
+    background-image: url(house.png);
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.weather-bar-info--container {
+    color: #ffffff;
+    text-align: center;
+}
+
+.weather-bar-info--city {
+    font-size: 28px;
+    padding: 20px 0;
+}
+
+.weather-bar-info--temp {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.zip--input {
+    padding: 10px 0;
+}
+
+.zip-input--textbox {
+    width: 100%;
+    border-radius: 14px;
+    padding: 6px;
+}
+
+
+@media (max-width: 991px) { 
+    .container.weather-bar {
+        width: 95%;
+    }
+    
+    .weather-bar-img--container{
+        min-height: 200px;
+        background-size: 220px;
+    }
+}

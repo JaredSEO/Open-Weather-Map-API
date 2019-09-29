@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Open Weather Map API</title>
+</head>
+
+<body>
+    <main>
+        <div class="container zip--container">
+            <div class="zip--input">
+                <input type="text" class="zip-input--textbox">
+            </div>
+        </div>
+        <div class="container weather-bar">
+            <div class="row weather-bar--row">
+                <div class="col-lg-3 col-md-12 weather-bar-img--container">
+                </div>
+                <div class="col-lg-6 col-md-12 weather-bar-info--container">
+                    <div class="weather-bar-info--city">Enter a zip code located in the US above.</div>
+                    <div class="weather-bar-info--temp"></div>
+                    <div class="weather-bar-info--description"></div>
+                    <div class="weather-bar-info--temp-high"></div>
+                    <div class="weather-bar-info--temp-low"></div>
+                    <div class="weather-bar-info--humidity"></div>
+                </div>
+                <div class="col-lg-3 col-md-12 weather-bar-button--container">
+                    <div class="weather-bar-button--center-div">
+                        <button class="weather-bar-button">
+                            Submit
+                        </button>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</html>
