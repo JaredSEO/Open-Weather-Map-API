@@ -1,7 +1,7 @@
 $('.weather-bar-button').click(function() {
 
-    var zip = $('.zip-input--textbox').val();
-    var Regex = /^\d{5}$/;
+    let zip = $('.zip-input--textbox').val();
+    let Regex = /^\d{5}$/;
 
     if (!Regex.test(zip))
     {
@@ -9,13 +9,11 @@ $('.weather-bar-button').click(function() {
     }
     else
     {
-        getWeather(zip);
+        const getWeather = (zipcode) => {
 
-        function getWeather(zipcode) {
-
-            var apiKey = "23c352e83611f9794adb66b79c2ee95d";
-            var city;
-            var temp;
+            let apiKey = "23c352e83611f9794adb66b79c2ee95d";
+            let city;
+            let temp;
     
     
             $.getJSON("http://api.openweathermap.org/data/2.5/weather?zip=" + zipcode + ",us&appid=" + apiKey, 
@@ -32,11 +30,13 @@ $('.weather-bar-button').click(function() {
             })
         }
 
-        function upperCaseString(string) {
+        const upperCaseString = (string) => {
             return string.replace(/\w\S*/g, function(text){
                 return text.charAt(0).toUpperCase() + text.substr(1).toLowerCase();
             });
         }
+        
+        getWeather(zip);
     }
 })
 
